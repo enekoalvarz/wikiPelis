@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia de Películas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5930/5930234.png" type="image/png">
+</head>
+
+<body>
+    <header class="cabecera">
+        <a href="index.html">
+            <img class="logo" src="https://cdn-icons-png.flaticon.com/512/5930/5930234.png" alt="logo" width="50" height="50">
+        </a>        
+        <nav>
+            <ul class="index_tags">
+                <li><a href="index.html">PÁGINA PRINCIPAL</a></li>
+                <li><a href="form.html">FORMULARIO DE ALTA</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html" style="color: rgb(3, 175, 41);">CONTÁCTANOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <br><h2 style="text-align: center;">Rellene el formulario</h2>
+        <br><div class="form">
+            <form action="submit_success.html" method="post">
+                <label>Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+    
+                <label>Correo:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label>Motivo:</label><br>
+                    <label><input type="radio" name="tipo" value="personal">Personal</label>
+                    <label><input type="radio" name="tipo" value="laboral">Laboral</label><br><br>
+    
+                <label>Tu mensaje:</label><br>
+                <textarea id="texto" name="texto" rows="4" cols="50" required></textarea>
+    
+                <input type="checkbox" id="terminos-condiciones" name="terminos-condiciones" required>
+                <label>Acepto los <a href="#">terminos y condiones</a></label><br>
+    
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <div style="margin: auto; text-align: center;">
+            <h2>O</h2>
+            <p>Envie un correo <a href="mailto:eneko.alvarez@opendeusto.es">aquí</a></p>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Eneko Alvarez. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
