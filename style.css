@@ -1,0 +1,226 @@
+/*body en general*/
+body {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* CABECERA */
+.cabecera {
+    background-color: #cecece;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.index_tags{
+    list-style-type: none;
+    margin: auto;
+    padding: 10px;
+}
+
+.index_tags li{
+    margin-top: 10px;
+}
+
+/* TABLA HOMESCREEN */
+.texto_presentacion{
+    text-align: center; 
+    width: 70%; 
+    margin: auto;
+}
+
+.div_tabla{
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    background-color: #f7f7f711;
+    border-radius: 8px;
+    
+}
+
+.tabla {
+    width: 70%;
+    margin: auto;
+}
+
+.tabla td {
+    border: 0.5px solid #ddddddbb;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla th {
+    padding: 14px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* TODOS LOS A*/
+a {
+    color: #367739;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color:  #4CAF50;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 10px;
+    background-color: #265527;
+    color: white;
+    position: static;
+}
+
+
+/* FORMULARIO DE REGISTRO */
+.form {
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    background-color: #292929;
+    border-radius: 8px;
+}
+
+.form_title {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #b8b8b8;
+    text-align: center;
+}
+
+        /*boton enviar*/
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049b2;
+}
+
+        /*el resto de casillas*/
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+/* PAGINA SUCCESS AL REGISTRAR */
+.success_message{
+    margin: auto;
+    text-align: center;
+}
+
+.boton-success-volver{
+    background-color: #dadada;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* CARTA DE DESCRIPCION DE PELICULA */
+.carta-desc-pelicula {
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    background-color: #d4d4d4;
+    color: #1f1f1f;
+    border-radius: 8px;
+}
+
+.desc-nombrepelicula {
+    color: #1f1f1f;
+    font-size: 1.5em; 
+    font-weight: bold;
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.carta-contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+}
+
+.desc-header {
+    font-weight: bold; 
+}
+
+/* FAQ */
+.faq-class{
+    margin: auto;
+    width: 90%;
+}
+
+.pregunta{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+
+/* ---------- RESPONSIVE -------------- */
+/* PARA MOVILES */
+@media screen and (max-width: 600px) {
+    
+    body{
+        font-size: 14px;
+    }
+
+    .div_tabla, .texto_presentacion, .form, .carta-desc-pelicula, .faq-class {
+        width: 90%; /* Ajustar el ancho para dispositivos móviles */
+    }
+
+    .tabla{
+        width: 85%;
+        font-size: 13px;
+    }
+
+    .tabla th, .tabla td {
+        padding: 2px; 
+    }
+
+    .index_tags {
+        padding: 2px; 
+    }
+
+    .form {
+        padding: 10px; 
+    }
+
+    .carta-contenido {
+        grid-template-columns: 1fr; /* que solo haya una col */
+    }
+
+    }
+
+
+    /* PARA ORDENADORES */
+    @media screen and (min-width: 600px) {
+       
+        .index_tags{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+    }
